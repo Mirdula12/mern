@@ -1,17 +1,58 @@
+/* 🌊 General Page Style */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Poppins', 'Segoe UI', sans-serif;
-  background: linear-gradient(135deg, #d4fc79, #96e6a1);
+  background: linear-gradient(135deg, #89f7fe, #66a6ff); /* blue gradient */
   color: #333;
   text-align: center;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: center; /* ✅ center vertically */
+  align-items: center;     /* ✅ center horizontally */
 }
 
+/* 🌊 NAVIGATION BAR */
+nav {
+  width: 100%;
+  background: linear-gradient(90deg, #07d3ed, #4117e8); /* blue gradient */
+  box-shadow: 0 4px 15px rgba(8, 150, 201, 0.3);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  font-size: 16px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+nav ul li a:hover {
+  color: #bbdefb;
+  transform: scale(1.1);
+}
+
+/* 🌤️ Main container (glass effect card) */
 .container {
   background: #ffffffcc;
   padding: 40px 50px;
@@ -19,18 +60,20 @@ body {
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(8px);
   max-width: 500px;
+  margin-top: 100px;     /* ✅ space below navbar */
+  margin-bottom: 100px;  /* ✅ even spacing bottom */
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Heading */
+/* Heading Style */
 h1 {
-  color: #2e7d32;
+  color: #1565C0;
   font-size: 2.5rem;
   margin-bottom: 20px;
   letter-spacing: 1px;
 }
 
-/* Paragraph */
+/* Paragraph Style */
 p {
   font-size: 18px;
   color: #555;
@@ -38,22 +81,100 @@ p {
   line-height: 1.6;
 }
 
-/* Button */
+/* 🌊 Button Link Style */
 a {
   display: inline-block;
   text-decoration: none;
   color: white;
-  background: linear-gradient(90deg, #4CAF50, #2E7D32);
+  background: linear-gradient(90deg, #2196F3, #1565C0);
   padding: 12px 25px;
   border-radius: 30px;
   font-weight: 600;
   letter-spacing: 0.5px;
-  box-shadow: 0 6px 15px rgba(46, 125, 50, 0.4);
+  box-shadow: 0 6px 15px rgba(21, 101, 192, 0.4);
   transition: all 0.3s ease;
 }
 
+/* Hover Effect */
 a:hover {
-  background: linear-gradient(90deg, #66bb6a, #388e3c);
+  background: linear-gradient(90deg, #42a5f5, #1e88e5);
   transform: scale(1.07);
-  box-shadow: 0 10px 20px rgba(46, 125, 50, 0.5);
+  box-shadow: 0 10px 20px rgba(25, 118, 210, 0.5);
 }
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🌊 BOX SECTION */
+.box-row {
+  display: flex;
+  justify-content: space-evenly;
+  align-items:right;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 100px;
+}
+
+/* Individual Boxes */
+.box {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #0e6fde;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #BBDEFB, #90CAF9); /* blue gradient */
+  box-shadow: 0 8px 20px rgba(21, 101, 192, 0.3);
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Animation */
+.box:hover {
+  transform: scale(1.07);
+  box-shadow: 0 12px 25px rgba(21, 101, 192, 0.4);
+}
+
+/* Number in Corner */
+.box span {
+  position: absolute;
+  top: 10px;
+  left: 12px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #0d47a1;
+}
+
+/* Alternate Box Color (odd) */
+.box:nth-child(odd) {
+  background: linear-gradient(145deg, #E3F2FD, #BBDEFB);
+  border-color: #1E88E5;
+}
+
+/* 📱 Responsive Design */
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .container {
+    width: 90%;
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 16px;
+  }
+} 

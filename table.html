@@ -5,17 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Table</title>
 
-  <!-- Optional: External CSS -->
+  <!-- External CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-  <div class="container" style="text-align: center; font-family: Arial, sans-serif;">
-    <h1 style="color: #2E7D32; margin-bottom: 20px;">Student Details</h1>
+<body style="background: linear-gradient(135deg, #89f7fe, #66a6ff); font-family: 'Poppins', sans-serif; text-align: center;">
+
+  <div class="container" style="margin: 50px auto; text-align: center;">
+    <h1 style="color: #1565C0; margin-bottom: 20px;">Student Details</h1>
 
     <table border="1" cellspacing="0" cellpadding="10" 
-           style="margin: 20px auto; width: 90%; background-color: white; border-collapse: collapse; border: 2px solid #2E7D32;">
-      <thead style="background-color: #4CAF50; color: white;">
+           style="margin: 20px auto; width: 90%; background-color: white; border-collapse: collapse; border: 2px solid #1565C0;">
+      <thead style="background-color: #2196F3; color: white;">
         <tr>
           <th>Roll No</th>
           <th>Name</th>
@@ -26,25 +27,25 @@
       </thead>
 
       <tbody>
-        <tr style="background-color: #e8f5e9;">
+        <tr style="background-color: #E3F2FD;">
           <td>101</td><td>Rahul</td><td>HTML</td><td>90</td><td>A+</td>
         </tr>
         <tr>
           <td>102</td><td>Anita</td><td>CSS</td><td>85</td><td>A</td>
         </tr>
-        <tr style="background-color: #e8f5e9;">
+        <tr style="background-color: #E3F2FD;">
           <td>103</td><td>Karan</td><td>JavaScript</td><td>92</td><td>A+</td>
         </tr>
         <tr>
           <td>104</td><td>Priya</td><td>React</td><td>88</td><td>A</td>
         </tr>
-        <tr style="background-color: #e8f5e9;">
+        <tr style="background-color: #E3F2FD;">
           <td>105</td><td>Vikram</td><td>Node.js</td><td>80</td><td>B+</td>
         </tr>
         <tr>
           <td>106</td><td>Meena</td><td>MongoDB</td><td>95</td><td>A+</td>
         </tr>
-        <tr style="background-color: #e8f5e9;">
+        <tr style="background-color: #E3F2FD;">
           <td>107</td><td>Ravi</td><td>Express</td><td>78</td><td>B+</td>
         </tr>
         <tr>
@@ -53,24 +54,26 @@
       </tbody>
     </table>
 
-    <!-- Back to Home Button (Inline CSS) -->
+    <!-- Back to Home Button -->
     <a href="index.html"
        style="
          display: inline-block;
          text-decoration: none;
          color: white;
-         background: linear-gradient(90deg, #4CAF50, #2E7D32);
+         background: linear-gradient(90deg, #2196F3, #1565C0);
          padding: 12px 25px;
          border-radius: 30px;
          font-weight: bold;
          letter-spacing: 0.5px;
-         box-shadow: 0 6px 15px rgba(46, 125, 50, 0.4);
+         box-shadow: 0 6px 15px rgba(21, 101, 192, 0.4);
          transition: all 0.3s ease;
+         margin-top: 20px;
        "
        onmouseover="this.style.transform='scale(1.1)'"
        onmouseout="this.style.transform='scale(1)'">
        ⬅ Back to Home
     </a>
   </div>
+
 </body>
 </html>

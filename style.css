@@ -1,0 +1,150 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic page style */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+}
+
+/* Header */
+header {
+  background-color: #1F2937;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+header nav a {
+  color: #E5E7EB;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+/* Hero section */
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1F2937;
+  color: white;
+  padding: 60px 40px;
+}
+
+.hero-content {
+  max-width: 50%;
+}
+
+.hero-content h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.hero-content p {
+  color: #E5E7EB;
+  margin-bottom: 20px;
+}
+
+.hero-content button {
+  background-color: #3882F6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.hero-image {
+  background-color: #6B7280;
+  width: 40%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Info section */
+.info {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.info h2 {
+  margin-bottom: 30px;
+}
+
+.info-boxes {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 150px;
+}
+
+.square {
+  width: 100%;
+  height: 100px;
+  border: 3px solid #3882F6;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+/* Quote section */
+.quote {
+  background-color: #E5E7EB;
+  padding: 50px;
+  text-align: center;
+}
+
+.quote p {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #1F2937;
+}
+
+/* CTA section */
+.cta {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.cta-content {
+  background-color: #3882F6;
+  color: white;
+  padding: 20px 40px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+
+.cta-content button {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #1F2937;
+  color: #E5E7EB;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+}
+
