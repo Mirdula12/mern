@@ -1,41 +1,54 @@
-<section class="table-section">
-  <h2>Student Details</h2>
+/* ====== Table Section ====== */
+.table-section {
+  text-align: center;
+  margin: 50px auto;
+  padding: 30px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 800px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
 
-  <table>
-    <thead>
-      <tr>
-        <th>Roll No</th>
-        <th>Name</th>
-        <th>Course</th>
-        <th>Marks</th>
-      </tr>
-    </thead>
+.table-section h2 {
+  margin-bottom: 25px;
+  color: #1F2937;
+}
 
-    <tbody>
-      <tr>
-        <td>101</td>
-        <td>Rahul</td>
-        <td>HTML</td>
-        <td>90</td>
-      </tr>
-      <tr>
-        <td>102</td>
-        <td>Anita</td>
-        <td>CSS</td>
-        <td>85</td>
-      </tr>
-      <tr>
-        <td>103</td>
-        <td>Karan</td>
-        <td>JavaScript</td>
-        <td>92</td>
-      </tr>
-      <tr>
-        <td>104</td>
-        <td>Priya</td>
-        <td>React</td>
-        <td>88</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Header */
+table th {
+  background: #3882F6;
+  color: white;
+  padding: 12px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+/* Body */
+table td {
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  color: #333;
+}
+
+/* Alternate row color */
+table tr:nth-child(even) {
+  background: #f2f6fc;
+}
+
+/* Hover effect */
+table tr:hover {
+  background: #e3f2fd;
+  transform: scale(1.01);
+  transition: 0.2s;
+}
