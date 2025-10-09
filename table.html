@@ -5,16 +5,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Table</title>
 
-  <!-- Link to your existing stylesheet -->
+  <!-- Optional: External CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <div class="container">
-    <h1>Student Details</h1>
+  <div class="container" style="text-align: center; font-family: Arial, sans-serif;">
+    <h1 style="color: #2E7D32; margin-bottom: 20px;">Student Details</h1>
 
     <table border="1" cellspacing="0" cellpadding="10" 
-           style="margin: 20px auto; width: 100%; background-color: white; border-collapse: collapse; border: 2px solid #2E7D32;">
+           style="margin: 20px auto; width: 90%; background-color: white; border-collapse: collapse; border: 2px solid #2E7D32;">
       <thead style="background-color: #4CAF50; color: white;">
         <tr>
           <th>Roll No</th>
@@ -24,6 +24,7 @@
           <th>Grade</th>
         </tr>
       </thead>
+
       <tbody>
         <tr style="background-color: #e8f5e9;">
           <td>101</td><td>Rahul</td><td>HTML</td><td>90</td><td>A+</td>
@@ -52,8 +53,24 @@
       </tbody>
     </table>
 
-    <!-- Back to Home Button -->
-    <a href="index.html">⬅ Back to Home</a>
+    <!-- Back to Home Button (Inline CSS) -->
+    <a href="index.html"
+       style="
+         display: inline-block;
+         text-decoration: none;
+         color: white;
+         background: linear-gradient(90deg, #4CAF50, #2E7D32);
+         padding: 12px 25px;
+         border-radius: 30px;
+         font-weight: bold;
+         letter-spacing: 0.5px;
+         box-shadow: 0 6px 15px rgba(46, 125, 50, 0.4);
+         transition: all 0.3s ease;
+       "
+       onmouseover="this.style.transform='scale(1.1)'"
+       onmouseout="this.style.transform='scale(1)'">
+       ⬅ Back to Home
+    </a>
   </div>
 </body>
 </html>
