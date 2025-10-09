@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Student Table</title>
-  <!-- Link your existing CSS -->
+  <!-- Link to your existing CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,7 +12,8 @@
     <h1>Student Details</h1>
     <p>Here is a list of students and their marks:</p>
 
-    <table border="1" cellspacing="0" cellpadding="10" style="width: 100%; border-collapse: collapse; margin-bottom: 25px;">
+    <table border="1" cellspacing="0" cellpadding="10" 
+           style="width: 100%; border-collapse: collapse; border-radius: 10px; overflow: hidden; margin-bottom: 30px;">
       <thead style="background-color: #4CAF50; color: white;">
         <tr>
           <th>Roll No</th>
@@ -22,8 +23,8 @@
           <th>Grade</th>
         </tr>
       </thead>
-      <tbody style="background-color: #f9f9f9; color: #333;">
-        <tr>
+      <tbody style="background-color: #ffffff;">
+        <tr style="background-color: #f1f8e9;">
           <td>101</td>
           <td>Rahul</td>
           <td>HTML</td>
@@ -37,7 +38,7 @@
           <td>85</td>
           <td>A</td>
         </tr>
-        <tr>
+        <tr style="background-color: #f1f8e9;">
           <td>103</td>
           <td>Karan</td>
           <td>JavaScript</td>
@@ -54,6 +55,7 @@
       </tbody>
     </table>
 
+    <!-- Back to Home Button -->
     <a href="index.html">⬅ Back to Home</a>
   </div>
 </body>
