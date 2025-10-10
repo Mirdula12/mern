@@ -1,0 +1,71 @@
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e6f0ff; /* light blue background */
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 columns */
+  grid-template-rows: auto auto auto auto; /* 4 rows */
+  gap: 5px;
+  width: 80%;
+  height: 90%;
+  max-width: 800px;
+}
+
+/* General box styling */
+.box {
+  color: white;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0px;
+  padding: 50px;
+}
+
+/* All boxes now have blue shades */
+.box1 {
+  grid-column: 1 / 4; /* spans all 3 columns */
+  background: #339cff; /* bright blue */
+}
+
+.box2 {
+  grid-row: 2 / 4; /* spans 2nd & 3rd row */
+  grid-column: 1 / 2;
+  background: #339cff; /* deep blue */
+}
+
+.box3 {
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
+  background: #339cff; /* medium sky blue */
+}
+
+.box4 {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  background: #339cff; /* navy blue */
+}
+
+.box5 {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+  background: #339cff; /* soft blue */
+}
+
+.box6 {
+  grid-row: 4 / 5;
+  grid-column: 1 / 4;
+  background: #339cff; /* royal blue */
+}
+@media  (max-width:600px){
+body {
+  background-color: rgb(246, 176, 224);
+
+}
+}

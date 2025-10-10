@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+
+  <style>
+    body {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      background-color: #e6f0ff;
+      margin: 0;
+      padding: 150px;
+    }
+
+    h1 {
+      color: #0066cc;
+      margin-bottom: 30px;
+    }
+
+    .choices {
+      margin-bottom: 25px;
+    }
+
+    button {
+      background-color: #339cff;
+      color: white;
+      border: none;
+      padding: 12px 25px;
+      margin: 10px;
+      font-size: 1.1rem;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background-color: #0073e6;
+      transform: scale(1.1);
+    }
+
+    #result {
+      color: #333;
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    #details {
+      color: #444;
+      font-size: 1.1rem;
+      margin-top: 10px;
+    }
+
+    #message {
+      color: green;
+      font-size: 1.2rem;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body style="text-align:center; font-family:Arial;">
+
+  <h1>Rock Paper Scissors Game 🎮</h1>
+
+  <div class="choices">
+    <button onclick="play('rock')">Rock 🪨</button>
+    <button onclick="play('paper')">Paper 📃</button>
+    <button onclick="play('scissor')">Scissor ✂️</button>
+  </div>
+
+  <h2 id="result"></h2>
+  <p id="details"></p>
+  <p id="message"></p>
+
+  <script>
+    function play(player) {
+      const choices = ['rock', 'paper', 'scissor'];
+      const computer = choices[Math.floor(Math.random() * 3)];
+      let result = '';
+      let message = '';
+
+      if (player === computer) {
+        result = "It's a draw!";
+      } 
+      else if (
+        (player === 'rock' && computer === 'scissor') ||
+        (player === 'paper' && computer === 'rock') ||
+        (player === 'scissor' && computer === 'paper')
+      ) {
+        result = "You win!";
+        message = "Congratulations🥳🥳!";
+      } 
+      else {
+        result = "You lose!";
+      }
+
+      document.getElementById('result').innerHTML = result;
+      document.getElementById('details').innerHTML = `You chose: <b>${player}</b> <br><br>Computer chose: <b>${computer}</b>`;
+      document.getElementById('message').innerHTML = message;
+    }
+  </script>
+
+</body>
+</html>
