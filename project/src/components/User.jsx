@@ -3,8 +3,8 @@ import React from 'react';
 const User = ({ name, department, skills, projects }) => {
   return (
     <div>
-      <h2>About</h2>
-      I am {name} <br></br>{department} department 
+      
+      <h1>I am {name} <br></br>{department} department</h1> 
       <h2>Skills</h2>
       <ol>
         {skills.map((skill) => (
