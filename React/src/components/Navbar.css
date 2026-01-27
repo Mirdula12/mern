@@ -1,0 +1,17 @@
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    background-color: aqua;
+    color:black;
+    width:700px;
+}
+.navbar li{
+    list-style:none;
+}
+.navbar li{
+    text-decoration: none;
+    color:black
+}
+.navbar li a:hover{
+    color:rgb(red,green,blue)
+}
