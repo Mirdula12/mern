@@ -1,5 +1,5 @@
 import React from 'react'
-import {useState} from 'react'
+import {useState,useEffect} from 'react'
 
 const Form = () => {
     const[form,setForm]=useState({
@@ -15,6 +15,9 @@ const Form = () => {
             [name]:value
         }))
     }
+    useEffect(() => {
+      console.log("From useEffect");
+    })
     const handleSubmit=(e)=>{
         e.preventDefault()
         console.log(form)

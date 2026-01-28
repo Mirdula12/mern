@@ -7,6 +7,13 @@ import Contact from './pages/Contact'
 import Navbar from './components/Navbar'
 import Product from './pages/Product'
 import ProductDetails from './pages/ProductDetails'
+import State from './hooks/State'
+import Form from './hooks/Form'
+import Profile from './components/Profile'
+import Reducer from './hooks/Reducer'
+import { createContext } from 'react'
+
+export const userContext=createContext();
 
 const App = () => {
   return (
@@ -19,6 +26,10 @@ const App = () => {
       <Route path='/contact' element={<Contact/>}/>
       <Route path='/product' element={<Product/>}/>
       <Route path='/product/:id' element={<ProductDetails/>}/>
+      <Route path='/state' element={<State/>}/>
+      <Route path='/form' element={<Form/>}/>
+      <Route path='/profile' element={<Profile/>}/>
+      <Route path='/reducer' element={<Reducer/>}/>
     </Routes>
      
     </>
