@@ -7,10 +7,17 @@ const Home = () => {
       <h1>Home</h1>
       <ul>
         <li>
-          <Link to="/State">useState</Link> 
+          <Link to="/State">useState</Link> <br></br>
+        </li>
+        <li>
+          <Link to="/Effect">useEffect</Link> 
         </li>
       </ul>
+
+
     </div>
+    
+    
   );
 };
 

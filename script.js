@@ -157,9 +157,21 @@ const print=(n)=>{
 }
 print(4);*/
 
-console.log('First');                                     // micro task  (javascript functiom execute directly and go to output)
+/*console.log('First');                                     // micro task  (javascript functiom execute directly and go to output)
 Promise.resolve().then(console.log ('from promises'))     // micro task
 setTimeout(()=>{                                         // macro task    ( take time to execute)
     console.log('inside Timeout');
 },2000)
-console.log('last');
+console.log('last');*/
+
+
+const fetchApi1 = async () => {
+    try {
+        const res = await fetch ('http://localhost:4000/tasks/getTask');
+        const data = await res.json();
+        {data.map((n)=>{console.log(n)})}
+    } catch (error) {
+        console.log(error);
+    }
+}
+fetchApi1();

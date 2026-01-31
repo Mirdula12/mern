@@ -6,7 +6,8 @@ import About from './pages/About.jsx';
 import Service from './pages/Service.jsx';
 import Contact from './pages/Contact.jsx';
 import State from './hooks/State.jsx';
-import Info from './pages/Info.jsx'; // Your personal info page
+import Info from './pages/Info.jsx'; 
+import Effect from './hooks/Effect.jsx'; // Importing Effect component
 
 const App = () => {
   return (
@@ -18,7 +19,8 @@ const App = () => {
         <Route path="/service" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/state" element={<State />} />
-        <Route path="/info" element={<Info />} /> {/* Only Info page shows personal info */}
+        <Route path="/info" element={<Info />} /> 
+        <Route path="/effect" element={<Effect />} />
       </Routes>
     </>
   );
