@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState,useEffect} from 'react'
-
+import axios from 'axios'
 const Form = () => {
     const[form,setForm]=useState({
         name:"",
@@ -27,7 +27,7 @@ const Form = () => {
         <h2>Form Handling Example</h2>
         <form onSubmit={handleSubmit}>
             <label htmlFor='name'>Name:</label>
-            <input type="text" id='name' name='name' value={form.name} onChange={handleChange} /><br/><br/>
+            <input className= "border rounded-xl mt-4 focus:ring -2"type="text" id='name' name='name' value={form.name} onChange={handleChange} /><br/><br/>
             <label htmlFor='email'>Email:</label>
             <input type="text" id='email' name='email' value={form.email} onChange={handleChange} /><br/><br/>
             <label htmlFor='age'>Age:</label>
